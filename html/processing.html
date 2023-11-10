@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>Cancellation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="cancellation.css">
+<script src="cancellation.js"></script>
+
+<style>
+  body{
+    background-color: rgb(157, 236, 236);
+  }
+</style>
+
+<body>
+  <div class="back">
+  <a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-back-512.png" alt="" height="50px" width="50px" onclick="back()"></a>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+<div class="container">
+<div class="w3-light-grey w3-round-large" style="border-style: dotted;">
+<div id="myBar" class="w3-container w3-blue w3-round-large" style="width:0%">0%</div>
+</div>
+<br>
+
+<script>
+  function submit(){
+  var elem = document.getElementById("myBar");   
+    var width = 0;
+    var id = setInterval(frame, 200);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        location.replace("cancel.html");
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        elem.innerHTML = width * 1  + '%';
+      }
+    }
+  }
+  submit();
+</script>
+<div class="blink"><span class="sp">Your ticket is in the cancellation process, please don't redirect the page.....</span></div>
+
+</body>
+</html>

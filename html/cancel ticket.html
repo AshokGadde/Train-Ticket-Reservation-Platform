@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="managebooking.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="cancellation.js"></script>
+    <title>Document</title>
+    <style>
+     body{
+         background-size: 100% 135%;
+         background-repeat: no-repeat;
+     }
+     .navbar {
+    overflow: hidden;
+    background-color: #282f30;
+  }
+  #login{
+  
+  float: right;
+  }
+  
+  .float{
+  float: right;
+  }  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 22px;
+    font-family: Maiandra GD;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 20px 22px;
+    background-color: inherit;
+    font-family: Maiandra GD;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: grey;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .navbar a.active {
+    background-color: #b93425;
+    color: white;
+  }
+
+     .submit{
+     
+      margin-left: 350px;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-weight: bold;
+      border-color: red;
+     }
+     .instruction{
+         margin-top: 90px;
+     }
+     .manage{
+         margin-top: 80px;
+     }
+     .button{
+        background-color: #b93425;
+     }
+     .button:hover{
+      background-color: green;
+  }
+  
+    </style>
+</head>
+<body background="ccn.jpg" >
+    
+    <div class="navbar">
+        <img src="nlogo.png" style="float: left;background-color: whitesmoke;" alt="" height="58px" width="100px">
+        <a href="home.html" class="active">My Train</a>
+        <div class="float">
+        <div class="dropdown">
+          <button class="dropbtn">Manage Booking 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="show my ticket.html">Show My Ticket</a>
+            <a href="SMS and Emails.html">Email/SMS</a>
+            <a href="my bookings.html">My Bookings</a>
+            <a href="feedback.html">Feedback</a>
+            </div>
+          </div>
+            <div class="dropdown">
+        <button class="dropbtn">Login
+        <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div> 
+</div>
+<a href="AboutUs.html" target="blank">About</a>
+            <a href="ContactUs.html" target="blank" class="float">Contact</a>
+            </div> 
+        </div>
+<div class="manage">
+    
+   CANCEL TICKET
+</div>
+<div class="path">
+    <a href="#" style="text-decoration: none;color: black;color: red;">Home</a> <i class="fa fa-caret-right"></i> Manage Booking  <i class="fa fa-caret-right"></i> Cancel Ticket
+</div>
+
+<div class="instruction">
+<img src="https://img3.oastatic.com/img2/56333884/max/t.png" alt="instruction" height="20" width="20" style="margin-left: -80px;">
+<span style="margin-left: -3px;">
+<font size="3px" color="black">Enter your <font class="inst"><b>PNR </b></font>Number and the <font class="inst">EMAIL</font> address used while booking the ticket</font></span>
+</div>
+<div class="form">
+    <form action="cancellation.html" style="margin-left: -80px;" onsubmit="return validate()">
+        <input type="text" class="pnr" placeholder="Ticket Number" size="70" id="uname"><br><br>
+        <input type="email" class="pnr" placeholder="Your e-mail" size="70" id="mail"><br><br>
+        <button class="button" style="vertical-align:middle; margin-top: 30px;"  ><span>SUBMIT </span></button>
+    </form>
+    
+
+    
+</div>
+<div class="terms"><font size="3px" color="black">*Please read the <a href="#" style="color: red; font-size: 20px;">Terms And Conditions</a> about the Cancellation Policy.</font></div>
+
+
+</body>
+</html>

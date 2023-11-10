@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cards</title>
+</head>
+
+<style>
+  
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #282f30
+;
+  }
+  #login{
+  
+  float: right;
+  }
+  
+  .float{
+  float: right;
+  }  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 22px;
+    font-family: Maiandra GD;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 20px 22px;
+    background-color: inherit;
+    font-family: Maiandra GD;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: grey;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .navbar a.active {
+    background-color: #b93425;
+    color: white;
+  }
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; 
+ }
+ .main{
+   font-family: Maiandra GD;
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+.footer{
+  text-align: center;
+  font-family: Maiandra GD;
+  background-color: #343a40;
+  height: 5%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  margin-bottom: -1%;
+}
+a{
+  text-decoration: none;
+  padding-bottom: 2px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+</style>
+<body style="background-color: silver;">  
+
+
+  <div class="navbar">
+    <img src="nlogo.png" style="float: left;background-color: whitesmoke;" alt="" height="58px" width="100px">
+    <a href="home.html" class="active">My Train</a>
+    <div class="float">
+    <div class="dropdown">
+      <button class="dropbtn">Manage Booking 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="cancel ticket.html">Cancel Ticket</a>
+        <a href="show my ticket.html">Show My Ticket</a>
+        <a href="SMS and Emails.html">Email/SMS</a>
+        <a href="feedback.html" target="blank">Feedback</a>
+        </div>
+      </div>
+        <div class="dropdown">
+    <button class="dropbtn">Login
+    <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+</div> 
+</div>
+    <a href="AboutUs.html" target="blank">About</a>
+    <a href="ContactUs.html" target="blank" class="float">Contact</a>
+    </div> 
+</div>
+
+
+
+  <div class="headertitle" style="font-size: 20px;font-family: Maiandra GD;padding: 10px;text-align: left;color: black;">
+      <div class="img" style="float: left; margin-top: 6px;margin-right: 10px;">
+          <img src="back.jpg" alt="back" usemap="#back" height="50" width="50">
+      <map name="back">
+      <area shape="rect" coords="0,0,50,50" alt="back" href="home.html">
+      </map>
+      </div>
+  
+      <h1 style="font-size: 50px;">My Bookings</h1>
+  </div>
+
+
+
+
+
+<div class="main">
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="MumbaiGate.jpg" height="227">
+</div>
+<div class="title">
+ <h1>
+Chennai → Mumbai</h1>
+</div>
+<div class="des">
+ <p><b>Date:16-05-2019</b><br><br>
+     <b>No of Travellers:4</b>
+ </p>
+<button>Total Fare:3200/-</button><br>
+<a href="INDEX.HTML" class="a1" target="blank">Rate Your Journey</a>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201605/delhi-heritage-2-monuments-1_647_050716084345.jpg?size=1200:675" height="227">
+</div>
+<div class="title">
+ <h1>
+Kanpur → Delhi</h1>
+</div>
+<div class="des">
+ <p><b>Date:05-03-2018</b><br><br>
+    <b>No of Travellers:4</b>
+ </p>
+<button>Total Fare:5100/-</button>
+<br>
+<a href="INDEX.HTML" class="a1" target="blank">Rate Your Journey</a>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="VictoriaMemorial.jpg" height="227">
+</div>
+<div class="title">
+ <h1>
+Sikkim → Kolkata</h1>
+</div>
+<div class="des">
+ <p><b>Date:23-04-2017</b><br><br>
+    <b>No of Travellers:6</b>
+ </p>
+<button>Total Fare:3600/-</button><br>
+<a href="INDEX.HTML" class="a1" target="blank">Rate Your Journey</a>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="Charminar.jpg" height="227">
+</div>
+<div class="title">
+ <h1>
+Goa → Hyderabad</h1>
+</div>
+<div class="des">
+ <p><b>Date:16-11-2016</b><br><br>
+    <b>No of Travellers:6</b></p>
+<button>Total Fare:3400/-</button><br>
+<a href="INDEX.HTML" class="a1" target="blank">Rate Your Journey</a>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="BangalorePalace.jpg" height="227">
+</div>
+<div class="title">
+ <h1>
+Coimbatore → Bangalore</h1>
+</div>
+<div class="des">
+    <p><b>Date:02-06-2015</b><br><br>
+        <b>No of Travellers:4</b></p>
+<button>Total Fare:2950/-</button><br>
+<a href="INDEX.HTML" class="a1" target="blank">Rate Your Journey</a>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="Amaravati.jpg" height="227">
+</div>
+<div class="title">
+ <h1>
+Hyderabad → Amaravati</h1>
+</div>
+<div class="des">
+    <p><b>Date:14-03-2014</b><br><br>
+        <b>No of Travellers:4</b></p>
+<button>Total Fare:3200/-</button><br>
+<a href="INDEX.HTML" class="a1" target="blank">Rate Your Journey</a>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="chennai.jpg" height="227">
+</div>
+<div class="title">
+ <h1>
+Kochi → Chennai</h1>
+</div>
+<div class="des">
+    <p><b>Date:03-08-2013</b><br><br>
+        <b>No of Travellers:2</b></p>
+<button>Total Fare:1380/-</button><br>
+<a href="INDEX.HTML" class="a1" target="blank">Rate Your Journey</a>
+
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="Surat.jpg" height="227">
+</div>
+<div class="title">
+ <h1>
+Haryana → Surat
+</h1>
+</div>
+<div class="des">
+    <p><b>Date:28-09-2012</b><br><br>
+        <b>No of Travellers:2</b></p>
+<button>Total Fare:2150/-</button><br>
+<a href="INDEX.HTML" class="a1" target="blank">Rate Your Journey</a>
+</div>
+</div>
+<!--cards -->
+</div>
+
+<div class="footer">
+   <h2>
+     Copyright © 2021 <span style="color: red;">MyTrain</span> All rights reserved.
+   </h2>
+ </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+		<script src="script.js"></script>	
+
+
+		<style>
+			body{
+				background: url(abcd.jpeg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+			}
+
+			.test1{
+				display: inline-block;
+				width: 25%;
+				margin:2%;
+				border: 5px outset rgb(228, 177, 177);
+				box-shadow: 10px 10px 30px black;
+				border-radius: 10px;
+				height: 30%;
+				padding: 1.5%;
+				background-color: whitesmoke;
+				font-size: 22px;
+				font-family: Maiandra GD;
+				margin-top: 5%;
+			}
+			.test1 img,.test3 img,.test4 img,.test5 img{
+				margin-left: 35%;
+			}
+			.test2{
+				display: inline-block;
+				width: 50%;
+				margin-top: 2%;
+				margin-left: 7.5%;
+			}
+			.test3{
+				display: inline-block;
+				width: 25%;
+				margin:2%;
+				border: 5px outset rgb(228, 177, 177);
+				box-shadow: 10px 10px 30px black;
+				border-radius: 10px;
+				height: 30%;
+				padding: 1.5%;
+				background-color: whitesmoke;
+				margin-left: -15%;
+				font-size: 22px;
+				font-family: Maiandra GD;
+
+			}
+			.test4{
+				display: inline-block;
+				width: 25%;
+				margin:2%;
+				border: 5px outset rgb(228, 177, 177);
+				box-shadow: 10px 10px 30px black;
+				border-radius: 10px;
+				height: 30%;
+				padding: 1.5%;
+				background-color: whitesmoke;
+				font-size: 22px;
+				font-family: Maiandra GD;
+			}
+			.test5{
+				display: inline-block;
+				width: 25%;
+				margin:2%;
+				border: 5px outset rgb(228, 177, 177);
+				box-shadow: 10px 10px 30px black;
+				border-radius: 10px;
+				height: 30%;
+				padding: 3%;
+				margin-left: 43%;
+				background-color: whitesmoke;
+				font-size: 22px;
+				font-family: Maiandra GD;
+
+			}
+
+		</style>
+		
+	</head>
+<body>
+
+<div class="test1">
+	<p>
+		<img src="service.png" alt="" height="100" width="100"><br><br>
+		"Very Good Service. I am fully satisfied with MyTrain" <br><br>
+		<b>Ms FARHANA BISWAS</b><br> <b>PNR Number:</b> 21033014462653033 <br><b>From</b> Sikkim to Kolkata<br><b>Date of Journey:</b> 30th March, 2021
+	</p>
+</div>
+
+
+<div class="test2">
+	<div class="col-md-6 well">
+		<h3 class="text-primary">Please drop your feedback!</h3>
+		<div class="col-md-6">
+			
+				<h3>Rating:</h3>
+				<span id="1" style="font-size:45px; cursor:pointer;"  class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)" >★</span>
+				<span id="2"  style="font-size:45px; cursor:pointer;" class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)">★</span>
+				<span id="3"  style="font-size:45px; cursor:pointer;" class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)">★</span>
+				<span id="4"  style="font-size:45px; cursor:pointer;" class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)">★</span>
+				<span id="5"  style="font-size:45px; cursor:pointer;" class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)">★</span>
+			</div>
+			<br />
+			<div class="form-group">
+				<h3>Review:</h3>
+				<textarea id="review" class="form-control" style="resize:none; height:100px;"></textarea>
+			</div>
+			<center><button class="btn btn-success" onclick="result()">SUBMIT</button></center>
+		</div>
+	</div>
+
+
+	<div class="test3">
+		<p>
+			<img src="service.png" alt="" height="100" width="100"><br><br>
+			"Yes, I am fully Satisfied with MyTrain service. I am very happy."<br> <br>
+			<b>Mr SHELENDER</b><br>
+			<b>PNR Number:</b> ZB210406082156 <br><b>From</b> Chennai to Coimbatore <br><b>Date of Journey:</b> 6th April, 2021
+		</p>
+		</div>
+
+
+
+	<div class="test4">
+		<p>
+			<img src="service.png" alt="" height="100" width="100"><br><br>
+			"Thank you for the ticket service through whatsapp. Transparent with customer all the charges are clear."<br> <br>
+			<b>Mr REVATI SHARAN TIWARI</b> <br><b>PNR Number:</b> 2254225532107485 <br><b>From</b> Bangalore to Hyderabad <br><b>Date of Journey:</b> 27th March, 2021
+	    </p>
+	</div>
+
+
+
+	<div class="test5">
+		<p>
+			<img src="service.png" alt="" height="100" width="100"><br>
+			I really enjoyed the journey in the train all the time throughout the trip, thanks MyTrain for such an experience! <br>
+			<b>Mr RAVI KUMAR</b> <br>
+			<b>PNR NUMBER:</b> 2256889621 <br>
+			<b>FROM</b> Amaravati to Adilabad <br>
+			<b>Date Of Journey:</b> 24th Febrauary, 2021
+			</p>
+	</div>
+
+
+	
+
+<script src="script.js"></script>	
+</body>
+</html>

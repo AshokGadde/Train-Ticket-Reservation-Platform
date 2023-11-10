@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+  }
+  *{
+    font-family: Maiandra GD;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #aad4da;
+  }
+  #login{
+  
+  float: right;
+  }
+  
+  .float{
+  float: right;
+  }  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 20px 22px;
+    font-family: Maiandra GD;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 20px 22px;
+    background-color: inherit;
+    font-family: Maiandra GD;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: grey;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .navbar a.active {
+    background-color: #b93425;
+    color: white;
+  }
+  .haf1{
+      background-color: white;
+      padding: 1%;
+      width: 90%;
+      margin: auto;
+      border-radius: 5px;
+      box-shadow: 10px 10px 30px black;
+  }
+  .ha2{
+      padding: 2%;
+      border-style: none;
+      font-family: Maiandra GD;
+      font-size: 25px;
+  }
+  .ha2:hover{
+      border: 3px dashed #ff7404;
+      text-decoration: underline;
+      border-radius: 5px;
+  }
+  .ha1{
+    font-family: Maiandra GD;
+    color: #5f5656;
+      font-size: 50px;
+      margin-left: 5%;
+      margin-top: -20%;
+      margin-bottom: -5%;
+  }
+  .btn pre
+{
+    text-align: center;
+    font-size: 25px;
+    color: tomato;
+    margin-top: -15%;
+    margin-left: 25%;  
+
+}
+.btn p{
+  text-align: center;
+}
+.btn
+{
+    width: 20%;
+    margin: 1%;
+    color: black;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 15%;
+    padding: 1%;
+}
+.safe{
+  
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.footer{
+  text-align: center;
+  font-family: Maiandra GD;
+  background-color: #343a40;
+  height: 5%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+}
+.null1,.null2,.null3{
+  display: inline-block;
+  width: 20%;
+  background-color: whitesmoke;
+  height: 25%;
+  margin-bottom: 1.5%;
+  padding: 0.5%;
+  border-radius: 10px;
+  font-family: Maiandra GD;
+  font-size: 20px;
+  text-align: justify;
+}
+.null1{
+  margin-left: 15%;
+  margin-right: 2.5%;
+}
+.null3{
+  margin-right: 12%;
+  margin-left: 2.5%;
+}
+.null,.afk,.afk1,.jhi,.poi h1,h3{
+  text-align: center;
+  font-family: Maiandra GD;
+}
+.pb{
+  margin-top: 50px;
+  margin-left: 100px;
+  line-height: 30px;
+  display: inline-block;
+}
+.links
+{
+  height: 280px;
+  width: 100%;
+  background-color: #d6d1d1;
+  margin-top: 15px;
+  font-family: Maiandra GD;
+  
+}
+li a{
+  text-decoration: none;
+}
+.guru
+{
+  color: black;
+}
+.afk,.afk1,.jhi,.lkj{
+  text-align: center;
+  font-family: Maiandra GD;
+  width: 65%;
+  margin: auto;
+  color: #9896aa;
+  padding: 15px;
+}
+.afk2,.jhi2{
+  background-color: #e4e0e0;
+}
+.guru:hover
+{
+  color: white;
+  background-color: #033067;
+  border-radius: 15px;
+  padding: 4px;
+ 
+}
+ul{
+  list-style: none;
+}
+
+ul li::before {
+    
+ 
+  content: "\2022";  
+  color: #c60001; 
+  display: inline-block; 
+  width: 1em;
+  margin-left: -0.9em;
+  font-weight: bold;
+  font-size:1.1rem;
+}
+.jhi1{
+  display: inline-block;
+}
+.poi1{
+  display: inline-block;
+  width: 20%;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 50px black;
+  border-radius: 10px;
+  padding: 0.5%;
+  margin: 2%;
+  margin-left: 15%; 
+}
+.poi1 img,.poi2 img,.poi3 img{
+  margin-left: 33%;
+  margin-bottom: -1%;
+}
+.poi2{
+  display: inline-block;
+  width: 20%;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 50px black;
+  border-radius: 10px;
+  padding: 0.5%;
+  margin: 2%;
+}
+.poi3{
+  display: inline-block;
+  width: 20%;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 50px black;
+  border-radius: 10px;
+  padding: 0.5%;
+  margin: 2%;
+}
+
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="nlogo.png" style="float: left;" alt="" height="50px" width="100px">
+            <a href="home.html" class="active">My Train</a>
+            <div class="float">
+            <div class="dropdown">
+              <button class="dropbtn">Manage Booking 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="cancel ticket.html">Cancel Ticket</a>
+                <a href="show my ticket.html">Show My Ticket</a>
+                <a href="SMS and Emails.html">Email/SMS</a>
+                <a href="my bookings.html">My Bookings</a>
+                <a href="feedback.html" target="_blank">Feedback</a>
+                </div>
+              </div>
+                <div class="dropdown">
+            <button class="dropbtn">Login
+            <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div> 
+    </div>
+            <a href="AboutUs.html" target="blank">About</a>
+            <a href="ContactUs.html" target="blank" class="float">Contact</a>
+            </div> 
+        </div>
+
+<div  style="background: url(bg22.png);height: 75%;padding: 15%;padding-bottom: 19%;background-size: cover;">
+    <div class="ha1">
+        <h4>Book Train Tickets Online</h4>
+    </div>
+
+        <div class="haf1" >
+            <form action="Bus Selection.html">
+            <select id="departure" name="departure" class="ha2">
+                <option value="Chennai">From</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Hosur">Hosur</option>
+                <option value="Salem">Salem</option>
+                <option value="Kumbakonam">Kumbakonam</option>
+                <option value="Thanjavur">Thanjavur</option>
+                <option value="Thirunaleveli">Thirunaleveli</option>
+                <option value="Nagercoil">Nagercoil</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+            </select>
+            
+            <select id="Arrival" name="Arrival" class="ha2">
+                <option value="Chennai">To</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Hosur">Hosur</option>
+                <option value="Salem">Salem</option>
+                <option value="Kumbakonam">Kumbakonam</option>
+                <option value="Thanjavur">Thanjavur</option>
+                <option value="Thirunaleveli">Thirunaleveli</option>
+                <option value="Nagercoil">Nagercoil</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+            </select>            
+        
+            
+            <input type="date" class="ha2">
+
+            
+            <input  type="submit" alt="Show Buses" value="Search Trains" class="ha2" style="margin-left: 2%;background-color: #ff7404;color: white;font-weight: bold;border-radius: 5px;">
+            </form>
+        </div>
+        </div>
+
+
+
+        <div class="null">
+          <h3 style="color: #fb702f;">EASY BOOKINGS</h3>
+        
+            <h1>Simple steps to book your train ticket online</h1>
+           <div class="null1">
+            <p><span style="font-size: 100px;color: #fb702f;;">1</span>
+            SEARCH TRAIN
+            Enter source and destination locations in the 'From' and 'To' tab respectively. Enter the 'Date of Journey' and hit the 'Search Trains' button.
+            </p>
+            </div>
+            <div class="null2">
+            <p><span style="font-size: 100px;color: #fb702f;;">2</span>
+            BOOK TICKET
+            Select a train of your choice from the list of trains displayed, select type, boarding, and dropping points and hit 'Continue to Book Tickets'.
+          </p>  
+          </div>
+            <div class="null3">
+           <p><span style="font-size: 100px;color: #fb702f;;">3</span>
+            TRAVEL
+            Travel Safe with deep cleaned and disinfected trains euipped with hand sanitizers, all staff with masks at all time during the journey. Happy Ticketing
+          </p>  
+          </div>
+        </div>
+        
+
+<img src="needed.png" alt="" width="100%" height="100%">
+
+
+<div class="poi">
+  <h3 style="color: #fb702f;">EXCITING BENEFITS</h3>
+  <h1 style="color: #5f5656;">Book your train ticket now</h1>
+  <div class="poi1">
+    <img src="money.png" width="100" height="75" alt="">
+    <h3>LOWEST PRICES</h3>
+    <p style="text-align: justify;">
+      MyTrain always give you the lowest price with the best partner offers on train ticket booking. 
+      Access to cashback offers on ticket booking. 
+      To get the best price on train bookings subscribe to our newsletter.
+    </p>
+  </div>
+
+  <div class="poi2">
+    <img src="gift.png" width="100" height="75" alt="">
+    <h3>UNMATCHED BENEFITS</h3>
+    <p style="text-align: justify;">
+      Booking train tickets online with MyTrains has solved many problems that people
+       face while booking their tickets at offline counters or travel agents.
+        We take care of your travel beyond train ticketing.
+    </p>
+  </div>
+
+  <div class="poi3">
+    <img src="service.png" width="100" height="75" alt="">
+    <h3>24/7 CUSTOMER SERVICE</h3>
+    <p style="text-align: justify;">
+      We ensure at MyTrain to provide 24/7 customer support. 
+      We use our experience to provide best service and are available
+      to solve your train ticket booking related issues anytime.
+    </p>
+  </div>
+
+
+  
+</div>
+
+
+<div class="afk2">
+  <div class="afk1">
+    <h3 style="color: #fb702f;">WHY US ?</h3>
+          
+              <h1 style="color: #5f5656;">Why MyTrain for Online Ticket Booking</h1>
+              <p>
+                MyTrain has 1500+ verified partners to choose for ticket booking who are serving more than 15,000+ routes across India. MyTrain offers 24/7 customer support to resolve all your online train ticket booking queries. You can also call on +91 862 530 6870 this numnber for train ticket bookings. MyTrain enables users to book train tickets on both Desktop and Mobile site seamlessly. All the train ticket bookings you make on the MyTrain website are safe & secure.
+              </p>
+              
+  </div>
+  </div>
+  
+
+
+<div class="afk">
+  <h3 style="color: #fb702f;">BOOK TRAIN TICKET NOW</h3>
+        
+            <h1 style="color: #5f5656;">Get offers and discounts on Train Ticket Booking</h1>
+            <p>
+              With simpler and smarter way of online train booking at MyTrain, be ready to travel any destination of India. We list more than 10,000 train routes across India and provide great facility of online train reservation. Explore the wide options of trains and choose to travel with AC, Sleeper, Second Sitting or several others at reasonable rates. Best discounts and cash back offers are available. Be free from standing in the long queue of ticket counters and go for train booking online with MyTrain. Be sure for a memorable & secure journey!
+            </p>
+            <p>
+              All the bookings you make on the MyTrain website are safe & secure. MyTrain offers 24/7 customer support to resolve all your train ticket booking queries.
+            </p>
+</div>
+<div class="jhi2">
+<div class="jhi">
+  <h3 style="color: #fb702f;">GREAT BENEFITS</h3>
+        
+            <h1 style="color: #5f5656;">Benefits of Booking Train Tickets Online</h1>
+            <p>Booking train tickets online with us has solved many problems that people face while booking their tickets at offline counters or travel agents.</p>
+<div class="jhi1" style="text-align: left;">
+            <ul>  
+              <li>Avoid standing in long queues at offline ticket counters</li>
+              <li>Each and every transaction is simple, safe and secure</li>
+              <li>Get train timings, ticket price, boarding &amp; dropping point details online</li>
+              <li>Access to payment partner discounts and cashback offers</li>        
+            </ul>
+        </div>
+
+<div class="jhi1" style="text-align: left;">
+           <ul>
+              <li>Choose from multiple operators</li>
+              <li>Check train ticket availability online</li>
+              <li>24/7 customer support</li>
+              <li>Avoid travel agents </li>
+           </ul>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="links"><span class="pb"><font color="black" size="4.5px"><b>Popular Train Routes</b></font>
+  <ul>
+   <li ><a href="#" class="guru">Pune-Shirdi Trains</a></li>
+   <li><a href="#" class="guru">Chennai-Coimbatore Trains</a></li>
+   <li><a href="#" class="guru">Hyderabad-Visakhapatnam Trains</a></li>
+   <li><a href="#" class="guru">Bangalore-Hyderabad Trains</a></li>
+   
+   </ul></span>
+
+   <span class="pb">
+    <ul>
+      <li><a href="#" class="guru">Hyderabad-Chennai Trains</a></li>
+      <li><a href="#" class="guru">Chennai-Bangalore Trains</a></li>
+      <li><a href="#" class="guru">Bangalore-Chennai Trains</a></li>
+      <li><a href="#" class="guru">Hyderabad-Vijayawada Trains</a></li>
+        </ul>
+ </span>
+
+   <span class="pb"><font color="black" size="4.5px"><b>Popular Hotel Cities</b></font>
+      <ul>
+          <li><a href="#" class="guru">Hotels in Hyderabad</a></li>
+          <li><a href="#" class="guru"> Hotels in Jaipur</a></li>
+          <li><a href="#" class="guru">Hotels in Mangalore</a></li>
+          <li><a href="#" class="guru">Hotels in Bengaluru</a></li>
+        
+          </ul>
+   </span>
+   
+   <span class="pb">
+      <ul>
+        <li><a href="#" class="guru">Hotels in Goa</a></li>
+        <li><a href="#" class="guru">Hotels in Mysore</a></li>
+        <li><a href="#" class="guru"> Hotels in Shirdi</a></li>
+        <li><a href="#" class="guru">Hotels in Coimbatore</a></li>
+          </ul>
+   </span>
+  </div>
+  
+  <div style="padding-left: 40%;background-color: #e4e0e0;">
+    <label>
+        FOLLOW US ON:
+    </label><br>
+    <a href="https://www.facebook.com/IRCTCofficial/" target="_blank"><img src="fb.png" alt="fb" height="80" width="80"></a>
+    <a href="https://www.instagram.com/irctc.official/" target="_blank"><img src="insta.png" alt="insta" height="80" width="80"></a>
+    <a href="https://twitter.com/IRCTCofficial" target="_blank"><img src="twitter.png"  alt="twiiter" height="80" width="80"></a>
+    <a href="https://www.youtube.com/channel/UC9iW6fZNhHJf8jb_j3DDmJA" target="_blank"><img src="yt.png"  alt="twiiter" height="70" width="70"></a>
+
+    
+</div>
+
+
+<div class="footer">
+  <h2>
+    Copyright © 2021 <span style="color: red;">MyTrain.com</span> All rights reserved.
+  </h2>
+</div>
+      
+    </body>
+</html>

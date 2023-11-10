@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="managebooking.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="cancellation.js"></script>
+    <title>Document</title>
+    <style>
+     body{
+         background-size: 100% 135%;
+         background-repeat: no-repeat;
+       
+      
+     }
+     *{
+         font-family: Maiandra GD;
+     }
+     .submit{
+     
+      margin-left: 350px;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-weight: bold;
+      border-color: red;
+      color: black;
+      
+     }
+     .instruction{
+         margin-top: 90px;
+     }
+     .manage{
+         margin-top: 80px;
+     }
+     .button:hover{
+      background-color: rgb(29, 28, 28);
+  }
+  
+    </style>
+</head>
+<body background="cca.jpg" >
+    
+    <div class="navbar">
+        <img src="nlogo.png" style="float: left;background-color: whitesmoke;" alt="" height="58px" width="100px">
+        <a href="home.html" class="active">My Train</a>
+        <div class="float">
+        <div class="dropdown">
+          <button class="dropbtn">Manage Booking 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="cancel ticket.html">Cancel Ticket</a>
+            <a href="SMS and Emails.html">Email/SMS</a>
+            <a href="my bookings.html">My Bookings</a>
+            <a href="feedback.html">Feedback</a>
+            </div>
+          </div>
+            <div class="dropdown">
+        <button class="dropbtn">Login
+        <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div> 
+</div>
+        <a href="AboutUs.html" target="blank">About</a>
+        <a href="ContactUs.html" target="blank" class="float">Contact</a>
+        </div> 
+    </div>
+<div class="manage" style="color: white;">
+    
+   SHOW MY TICKET
+</div>
+<div class="path">
+    <a href="#" style="text-decoration: none;color: red;">Home</a> <font color="white"><i class="fa fa-caret-right"></i> Manage Booking  <i class="fa fa-caret-right"></i> Show My Ticket</font>
+</div>
+
+<div class="instruction">
+<img src="https://img3.oastatic.com/img2/56333884/max/t.png" alt="instruction" height="20" width="20" style="margin-left: -80px;">
+<span style="margin-left: -3px;">
+<font size="3px">Enter your <font class="inst"><b>MOBILE NUMBER </b></font>Number and the <font class="inst">EMAIL</font> address used while <span style="color: rgba(59, 59, 59);">booking the</span> ticket</font></span>
+</div>
+<div class="form">
+    <form action="css.html" style="margin-left: -80px;" onsubmit="return showticket()">
+        <input type="number" class="pnr"  size="70" style="padding: 15px;padding-right: 375px;" id="mnum"><br><br>
+        <input type="email" class="pnr" size="70" id="gmail"><br><br>
+        <button class="button" style="vertical-align:middle; margin-top: 30px;"  ><span>SUBMIT </span></button>
+    </form>
+    
+
+    
+</div>
+<div class="terms"><font size="3px">*Verify your details, and See your Tickets</font></div>
+
+
+</body>
+</html>

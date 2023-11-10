@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cancellation.css">
+    <title>Cancellation</title>
+
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-size: 100%; 
+            font-family: Maiandra GD;
+            background-attachment: fixed;
+        }
+        p{
+            font-size: 32px;
+            color: white;
+            font-family: Maiandra GD;
+            font-weight: bold;
+            margin-left: 260px;
+        }
+        .ho{
+            margin-left: 1200px;
+            margin-top: -90px;
+            font-size: 21px;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        
+        .cb
+        {
+            margin-left: 1300px;
+            margin-top: -47px;
+            font-size: 21px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .head
+        {
+            height: 100px;
+            width: 70%;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        .ho:hover{
+            color: #175470;
+            text-decoration: overline;
+
+        }
+        .cb:hover{
+            color: #175470;
+            text-decoration: overline;
+            
+
+        }
+
+        textarea{
+            border-style: groove;
+            border-width: 5px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 40px gray;
+        }
+
+        ::placeholder
+        {
+            font-family: Maiandra GD;
+            font-weight: bold;
+        }
+    </style>
+    <script src="cancellation.js">
+        
+    </script>
+</head>
+<body background="https://onlyvectorbackgrounds.com/wp-content/uploads/2020/06/Abstract-3d-Geometric-Shapes-Background-Navy.jpg">
+    <div class="head">
+
+    <p>Cancel Your Ticket Here</p></div>
+    <a href="home.html"><p  class="ho">HOME</p></a>
+    <a href="cancel ticket.html"><p   class="cb">CANCEL BOOKING</p></a>
+
+<br>
+    <div class="details">
+        <br>
+        <div class="book">
+            <table border="1" cellpadding="5" id="customers">
+                <th colspan="3">Booked Ticket Details</th>
+                <tr><td>Ticket No: 54314701</td><td>PNR NO: 1935</td><td>Service Name: MAS TO CBT</td></tr>
+                <tr><td>Bus Type: VOLVO AC SEMI SLEEPER</td><td>From: CHENNAI</td><td>To: COIMBATORE</td></tr>
+                <tr><td>Departure Time: 18:15</td><td>Date of Journey: 20/07/2021</td><td>Seat No(s): 21W,22,23W</td></tr>
+                <tr><td>No.Of.Adult/Child: 2/1</td><td>Booked Date: 10/07/2021</td><td>Ticket Amount: <b>Rs 5012.00/-</b></td></tr>
+                <tr><td colspan="3" align="center">Status:<font color="#175470"><b>CONFIRMED</b></font></td></tr>
+
+            </table>
+            <br>
+            <table border="1" cellpadding="5" id="customers">
+                <th colspan="7">Passenger Details</th>
+                <tr><td>Passenger Name</td><td>Age</td><td>Category</td><td>Gender</td><td>Seat No</td><td>Price</td><td>Select for Cancel</td></tr>
+                <tr><td>UDAY M</td><td>26</td><td>ADULT</td><td>MALE</td><td>21W</td><td>2004</td><td><form><input type="checkbox"></form></td></tr>
+                <tr><td>GEETHA M</td><td>25</td><td>ADULT</td><td>FEMALE</td><td>22</td><td>2004</td><td><form><input type="checkbox"></form></td></tr>
+                <tr><td>JADEY M</td><td>10</td><td>CHILD</td><td>MALE</td><td>23W</td><td>1004</td><td><form><input type="checkbox"></form></td></tr>
+            </table>
+            <h4>Note: Refund details not displayed, if selected ticket is not matching the cancellation terms</h4>
+            
+        </div>
+        
+            <button type="submit" style="background-color: #175470;font-family: Maiandra GD;" id="refund" onclick="refund()">Show Refund Details</button>
+            <div id="ref">
+            <h3 style="font-size: 28px;">Refund Details</h3>
+            <table border="1" id="customers"><th>Description</th><th>Original Transaction</th><th>To Be Refunded</th>
+            <tr><td>Journey Fee</td><td>4812.00</td><td>3812.00</td></tr>
+            <tr><td>Reservation Fee</td><td>100.00</td><td>100.00</td></tr>
+            <tr><td>Toll Fee</td><td>20.00</td><td>20.00</td></tr>
+            <tr><td>Levy Fee</td><td>30.00</td><td>30.00</td></tr>
+            <tr><td>Service Fee</td><td>50.00</td><td>50.00</td></tr>
+            <tr><td><b>Total</b></td><td><b>5012.00</b></td><td><b>4012.00</b></td></tr>
+            </table>
+            <br>
+            <br>
+
+            <div>
+                <form action="processing.html" onsubmit="return reaso()" class="reas">
+                <label for="reason"><b>Select a Reason for your Ticket Cancellation:</b></label>
+                <select name="reason" id="reason">
+                    <option value="select your reason" disabled selected>select your reason</option>
+                    <option value="Sickness and Injury">Sickness and Injury</option>
+                    <option value="Change of Plans">Change of Plans</option>
+                    <option value="Change of date">Change of date</option>
+                    <option value="Changed My Destination">Changed My Destination</option>
+                </select><br><br><br>
+                <b>OR</b><br><br>
+                <b>Write your Reasons for Cancellation:</b><br><br><br>
+                <textarea name="text" id="ticket" cols="70" rows="10" placeholder="Write your Reasons here...."></textarea>
+            <button type="submit" style="background-color: #175470;font-family: Maiandra GD;" class="cancel">Confirm Cancellation</button>
+            </form>
+            </div>
+            
+         
+            
+        </div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout Card</title>
+    <script type = "text/javascript">
+    //Form validation
+    function validate() 
+    {
+         var emailID = document.myForm.EMail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) 
+         {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+         document.myForm.Zip.value.length != 6 ) {
+         
+         alert( "Please provide a zip in the format ######.\nWhere # is an integer");
+         document.myForm.Zip.focus() ;
+         return false;
+         }
+         
+         if(document.myForm.cardnumber.value == "" || isNaN( document.myForm.cardnumber.value ) ||
+         document.myForm.cardnumber.value.length != 16)
+         {
+         
+         alert( "Please enter a valid credit card number.");
+         document.myForm.cardnumber.focus() ;
+         return false;
+         }
+
+        if( document.myForm.expmonth.value == "" || isNaN( document.myForm.expmonth.value ) ||
+        document.myForm.expmonth.value<1 || document.myForm.expmonth.value>12)
+            {
+                alert( "Please provide a month in the format ##.\nWhere # is an integer");
+         document.myForm.expmonth.focus() ;
+         return false;    
+            }
+            if( document.myForm.expyear.value == "" || isNaN( document.myForm.expyear.value ) ||
+        document.myForm.expyear.value<2000 || document.myForm.expyear.value>3000)
+            {
+                alert( "Please provide an year in the format ####.\nWhere # is an integer");
+         document.myForm.expyear.focus() ;
+         return false;    
+            }
+            if( document.myForm.cvv.value == "" || isNaN( document.myForm.cvv.value ) ||
+         document.myForm.cvv.value.length != 3 ) 
+         {
+         
+         alert( "Please provide a cvv in the format ###.\nWhere # is an integer");
+         document.myForm.cvv.focus() ;
+         return false;
+         }
+        }
+     </script>  
+
+    
+    <!-- style css -->
+    <link rel="stylesheet" href="Payment page style.css">
+</head>
+<body>
+
+<h2>Checkout Here</h2>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form id="validate" name = "myForm" action="payment status.html" target="_blank" onsubmit = "return(validate());">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+
+                        <label for="fname"><i class="fa fa-user"></i><img src="name.jpeg" alt="cards" width="20" height="20"> Full Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Raghesh Krishnan" required>
+                        <label for="email"><i class="fa fa-envelope"></i><img src="gmail.jpeg" alt="cards" width="20" height="15"> Email</label>
+                        <input type="text" id="email" name="EMail" placeholder="ragheshkrishnan@gmail.com" required>
+                        <label for="adr"><i class="fa fa-address-card-o"></i><img src="address.jpeg" alt="cards" width="20" height="15"> Residential Address</label>
+                        <input type="text" id="adr" name="address" placeholder="110 W. Street-15 Pragathi Nagar" required>
+                        <label for="city"><i class="fa fa-institution"></i><img src="city.jpeg" alt="cards" width="20" height="15"> City/Home Town</label>
+                        <input type="text" id="city" name="city" placeholder="Chennai" required>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="Tamil Nadu"required>
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="Zip" placeholder="600001"required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards:</label>
+                        <img src="card.png" alt="cards">
+
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Raghesh Krishnan"required>
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4455"required>
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="07"required>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2021"required>
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352"required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr"> I have read and agree to all Terms and Conditions
+                </label>
+                <input type="submit" value="Pay" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="col-25">
+        <div class="container">
+            <h4>Current Booking(s): <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+            <p><a href="#">Chennai To Coimbatore</a> <span class="ticketdetails"></span></p>
+            <p><a href="#">Date:01-06-2021</a> <span class="ticketdetails"></span></p>
+            <p><a href="#">Arrival: 08:52 | Departure: 08:56</a> <span class="ticketdetails"></span></p>
+            
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>Rs.1260</b></span></p>
+        </div>
+    </div>
+</div>
+<!-- script validate js -->
+<script>
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            city: {
+                required: true,
+            },
+            state: {
+                required: true,
+            },
+            zip: {
+                required: true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnumber: {
+                required: true,
+            },
+            expmonth: {
+                required: true,
+            },
+            expyear: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+           
+        },
+        messages: {
+            fullname:"Please input full name*",
+            email:"Please input email*",
+            city:"Please input city*",
+            address:"Please input address*",
+            state:"Please input state*",
+            zip:"Please input address*",
+            cardname:"Please input card name*",
+            cardnumber:"Please input card number*",
+            expmonth:"Please input exp month*",
+            expyear:"Please input exp year*",
+            cvv:"Please input cvv*",
+        },
+    });
+</script>
+</body>
+</html>
