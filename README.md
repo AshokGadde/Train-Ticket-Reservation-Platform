@@ -69,7 +69,8 @@ The available classes for a train are Second Sitting(2S), Sleeper(SL), AC Chair 
 
 
 ## Schema Diagram
-![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/7f9972cd-0332-473d-be54-215e0b9bb0e4)
+![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/6207cc9e-a848-4d6a-90c9-ba31af780aee)
+
 
 
 # Entities & Attributes
@@ -157,7 +158,9 @@ The available classes for a train are Second Sitting(2S), Sleeper(SL), AC Chair 
 
 
 ## ER Diagram
-![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/75c1f838-4f73-45e8-8763-839426a69208)
+![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/4b193b62-f7c4-4e02-8630-9d853629a0dd)
+
+
 
 
 ## Normalisation
