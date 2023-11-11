@@ -1,23 +1,21 @@
-TABLE OF CONTENTS
-
-I. ABSTRACT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  3
-   a. Functionalities of System . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   3
-   b. Modules & Benefits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  4
-II. INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  5
-   a. Project Description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-III. SCHEMA DIAGRAM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  7
-IV. ENTITIES & ATTRIBUTES . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  8
-V.  ER DIAGRAM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   11
-VI. NORMALISATION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-a.	First Normalisation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-b.	Second Normalisation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  14
-c.	Third Normalisation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  14
-d.	BCNF  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  18
-VII. BACKEND DESIGN  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  19
-     a. Tables Creation  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  19
-     b. Insertion of Records  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   24 
-     c. Sample Instances  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  34
-VIII. FRONTEND DESIGN  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  44
-IX. CONNECTIVITY  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  50
-X. CONCLUSION  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
- 
+## Table of Contents
+1. [Abstract](#abstract)
+   - a. [Functionalities of System](#functionalities-of-system)
+   - b. [Modules & Benefits](#modules--benefits)
+2. [Introduction](#introduction)
+   - a. [Project Description](#project-description)
+3. [Schema Diagram](#schema-diagram)
+4. [Entities & Attributes](#entities--attributes)
+5. [ER Diagram](#er-diagram)
+6. [Normalisation](#normalisation)
+   - a. [First Normalisation](#first-normalisation)
+   - b. [Second Normalisation](#second-normalisation)
+   - c. [Third Normalisation](#third-normalisation)
+   - d. [BCNF](#bcnf)
+7. [Backend Design](#backend-design)
+   - a. [Tables Creation](#tables-creation)
+   - b. [Insertion of Records](#insertion-of-records)
+   - c. [Sample Instances](#sample-instances)
+8. [Frontend Design](#frontend-design)
+9. [Connectivity](#connectivity)
+10. [Conclusion](#conclusion)
