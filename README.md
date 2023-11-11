@@ -776,6 +776,7 @@ b. Database schema after normalisation
 
 ### Sample Instances
 1. NewAgent
+
  ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/c338e6fe-2203-4715-83ea-64b500253684)
 
 2.Agentmap
@@ -797,23 +798,20 @@ b. Database schema after normalisation
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/895e9553-614f-413e-83ac-d20dd3b5ff19)
 
  
-
 6.Bookingmap
  
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/c32b1a73-390d-47fb-a216-53a62c2074cf)
 
 
 7.TrainRoute
+
  
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/4aa735a2-8506-49f7-abd1-6a81f1dff17e)
-
-
 
 
 8.TrainRoutemap
  
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/0221e7d9-5179-424d-b646-8451f463f649)
-
 
 
 9.Available
@@ -848,56 +846,77 @@ b. Database schema after normalisation
  
 
 15.User
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/cfad932e-1b2f-422b-8b9b-165142107a10)
  
 
 16.Usermap
 
- ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/7ae965b8-3a11-459b-aa05-37b185f1d68b)
+
+![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/7ae965b8-3a11-459b-aa05-37b185f1d68b)
 
 
 17.Cancellation
+
  
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/fae0cb50-d698-4928-bbd2-7e5a5646363a)
 
 
 18.PreviousTrips
+
  
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/c3f537b8-63b4-46d2-8459-3ee0da5a043d)
 
 
 19.PreviousTripsmap
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/e9270104-da7c-431e-a689-219039de209d)
  
 
 20.SignUp
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/d44a68ec-a1c1-4b62-ab52-22ec26f17a29)
   
 
 
 21.SignUpmap
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/852b6219-57aa-4e0c-bb69-c6ca6eabb414)
 
 
 22.Login
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/f1af3b8c-6b38-49ec-9d37-a3bf1f296ba9)
  
 
 ## Frontend Design
 Sample Screenshots:
 Home Page:
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/28ed0bdc-b844-4eef-9e51-572260da56c0)
  
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/afaace4f-ebca-401a-b810-37fcee315f37) 
+
 
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/7ba0ea61-0cb1-4f75-a1e2-8923f6f57dcd)
  
+
+
 Sign Up Page:
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/f29a8d5e-368d-4d5e-8f2f-a4465cb846ab)
 
 
  
 Available Trains Page:
+
 
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/f450d673-37d1-45a7-ae5c-c840634c6ccf)
 
@@ -905,10 +924,12 @@ Available Trains Page:
 
 Booking Details Page:
 
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/01aca999-b77d-4df9-aa74-049aed5acd69)
  
 
 SMS Details Page:
+
 
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/e2852878-bda7-4863-99ae-8789b425b4ca)
 
@@ -916,39 +937,64 @@ SMS Details Page:
 
 
 Payment Page:
- ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/557b477d-8e5e-47c8-bd6f-4cc1a9960ed8)
 
- ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/b5946cae-11ab-40f1-a67e-f56cd58441c8)
+
+![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/557b477d-8e5e-47c8-bd6f-4cc1a9960ed8)
+
+
+
+![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/b5946cae-11ab-40f1-a67e-f56cd58441c8)
 
  
 E-ticket Page:
  
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/d30ed67e-1e87-4a57-ae95-a7f0c48ec63e)
 
+
 My Bookings page:
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/b61859af-9785-426c-a6fb-5e60adb9fb1a)
+
 
 Ticket Cancellation Page:
 
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/15f50b1a-57b7-43d2-a14e-4abe52fc8050)
+
 
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/f781d77c-976b-407d-9548-e3fb469fcfc9)
  
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/4d7b3606-1ae1-473e-9e5e-876bc4aefb20)
  
+
+
 ## Connectivity
+
 Sign Up.php
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/7961371a-be92-4667-9079-95a07717a050)
 
  
 
 Train Ticket Reservation.php
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/9be755a2-96cf-4f57-8455-1620e4b1f742)
+
+
 
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/115e6abe-deff-4ac4-9224-6ebf9abd6041)
  
 
+
+
 Train Details.php
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/937d38b3-dffc-4537-a776-466b3cd37314)
  
 
@@ -965,16 +1011,24 @@ Customer:
  
 
 Route:
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/93f2e248-15e5-4dea-b8b0-f8fa6331b667)
 
  
 
 Schedule:
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/73c40e85-13d1-4549-abff-4374a0a06fe0)
 
 
 Payment:
+
+
 ![image](https://github.com/AshokGadde/Train-Ticket-Reservation-Platform/assets/82217218/20e2f2fb-8988-495f-b3ca-3bb404bf14f9)
+
+
 
 ## Conclusion
 The main of developing reservation system is to provide all information that is required by the users. User friendliness is a must that is the user must get the details without complicated searching procedures. Other important requirements of software are data security, extensibility and maintainability. 
